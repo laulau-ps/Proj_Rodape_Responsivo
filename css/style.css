@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+}
+
+.conteudo-principal {
+    display: flex;
+}
+
+.conteudo-principal .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .conteudo {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .conteudo:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+    top: -10px;
+}
+
+.box .conteudo:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #450580;
+    top: -10px;
+}
+
+.esquerda .conteudo p {
+    text-align: justify;
+}
+
+.esquerda .conteudo .social {
+    margin: 20px 0 0 0;
+}
+
+.esquerda .conteudo .social a {
+    padding: 0 2px;
+}
+
+.esquerda .conteudo .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.esquerda .conteudo .social a span:hover {
+    background: #450580;
+}
+
+.centro .conteudo .fa-solid {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.centro .conteudo .fa-solid:hover {
+    background: #450580;
+
+}
+
+.centro .conteudo .texto {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.centro .conteudo .telefone {
+    margin: 10px 0;
+}
+
+.direita form .texto {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.direita form .msg {
+    margin-top: 10px;
+}
+
+.direita form input,
+.direita form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.direita form input:focus,
+.direita form textarea:focus {
+    outline-color: #3498db;
+}
+
+.direita form input {
+    height: 35px;
+}
+
+.direita form .botao {
+    margin-top: 10px;
+}
+
+.direita form .botao button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #450580;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.direita form .botao button:hover {
+    background: #000;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #656565;
+}
+
+.bottom center a {
+    color: #450580;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:900px) {
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+
+    .conteudo-principal {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .conteudo-principal .box {
+        margin: 5px 0;
+    }
+}
