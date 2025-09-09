@@ -1,5 +1,7 @@
+/*IMPORTANDO FONTE*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*RESET CSS E ESTILO GLOBAL*/
 * {
     margin: 0;
     padding: 0;
@@ -8,33 +10,42 @@
     color: #fff;
 }
 
+/*ESTILIZAÇÃO DO RODAPÉ*/
 footer {
+    /* Fixa no rodapé da tela */
     position: fixed;
+
     bottom: 0;
     width: 100%;
     background-color: #111;
 }
 
+/*CONTAINER PRINCIPAL DO RODAPE*/
 .conteudo-principal {
+    /*distribui os blocos em linha*/
     display: flex;
 }
 
+/*DETERMINA QUE CADA BOX OCUPE 50% DA LARGURA*/
 .conteudo-principal .box {
     flex-basis: 50%;
     padding: 10px 20px;
 }
 
+/*TITULO DENTRO DO BOX*/
 .box h2 {
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
+/*CONTAINER DE CONTEÚDO*/
 .box .conteudo {
     margin: 20px 0 0 0;
     position: relative;
 }
 
+/*LINHA HORIZONTAL ANTES DO CONTEUDO*/
 .box .conteudo:before {
     position: absolute;
     content: '';
@@ -44,6 +55,7 @@ footer {
     top: -10px;
 }
 
+/*DESTAQUE COLORIDO EM PARTE DA LINHA*/
 .box .conteudo:after {
     position: absolute;
     content: '';
@@ -53,18 +65,22 @@ footer {
     top: -10px;
 }
 
+/*TEXTOS JUSTIFICADOS*/
 .esquerda .conteudo p {
     text-align: justify;
 }
 
+/*SEÇÃO DE ICONES SOCIAIS*/
 .esquerda .conteudo .social {
     margin: 20px 0 0 0;
 }
 
+/*LINK DOS ICONES*/
 .esquerda .conteudo .social a {
     padding: 0 2px;
 }
 
+/*ESTILOS DOS ICONES*/
 .esquerda .conteudo .social a span {
     height: 40px;
     width: 40px;
@@ -77,10 +93,12 @@ footer {
     cursor: pointer;
 }
 
+/*MUDA A COR DO ICONE AO PASSAR O MOUSE*/
 .esquerda .conteudo .social a span:hover {
     background: #450580;
 }
 
+/*ICONES DO CENTRO*/
 .centro .conteudo .fa-solid {
     font-size: 1.4375rem;
     background: #1a1a1a;
@@ -93,31 +111,37 @@ footer {
     cursor: pointer;
 }
 
+/*HOVER NOS ICONES DO CENTRO*/
 .centro .conteudo .fa-solid:hover {
     background: #450580;
 
 }
 
+/*TEXTO AO LADO DOS ICONES*/
 .centro .conteudo .texto {
     font-size: 1.0625rem;
     font-weight: 500;
     padding-left: 10px;
 }
 
+/*ESPAÇAMENTO PARA O TELEFONE*/
 .centro .conteudo .telefone {
     margin: 10px 0;
 }
 
+/*ROTULOS DO FORMULARIO DA DIREITA*/
 .direita form .texto {
     font-size: 1.0625rem;
     margin-bottom: 2px;
     color: #656565;
 }
 
+/*ESPAÇAMENTO PARA A MENSAGEM*/
 .direita form .msg {
     margin-top: 10px;
 }
 
+/*ESTILO DO INPUT E TEXTAREA*/
 .direita form input,
 .direita form textarea {
     width: 100%;
@@ -127,19 +151,23 @@ footer {
     border: 1px solid #222222;
 }
 
+/*EFEITO DE FOCO NOS INPUTS*/
 .direita form input:focus,
 .direita form textarea:focus {
     outline-color: #3498db;
 }
 
+/*ALTURA PADRAO DOS INPUTS*/
 .direita form input {
     height: 35px;
 }
 
+/*CONTAINER DO BOTÃO*/
 .direita form .botao {
     margin-top: 10px;
 }
 
+/*ESTILO DO BOTÃO*/
 .direita form .botao button {
     height: 40px;
     width: 100%;
@@ -152,28 +180,35 @@ footer {
     transition: all 0.3s ease;
 }
 
+/*HOVER DO BOTÃO*/
 .direita form .botao button:hover {
     background: #000;
 }
 
+/*AREA INFERIOR DO RODAPE*/
 .bottom center {
     padding: 5px;
     font-size: 0.9375rem;
     background: #151515;
 }
 
+/*TEXTO CINZA*/
 .bottom center span {
     color: #656565;
 }
 
+/*LINK DA AREA INFERIOR*/
 .bottom center a {
     color: #450580;
     text-decoration: none;
 }
 
+/*HOVER LINKS AREA INFERIOR*/
 .bottom center a:hover {
     text-decoration: underline;
 }
+
+/*RESPONSIVIDADE:*/
 
 @media screen and (max-width:900px) {
     footer {
